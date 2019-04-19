@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_main_groof_new">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <th.co.octagoninteractive.groof.util.CTextViewMed
+            android:id="@+id/tv_title_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textColor="#292663"
+            android:text="@string/title_menu_sitelist" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/site_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <th.co.octagoninteractive.groof.util.CTextViewCond
+            android:id="@+id/tv_wait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="60dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Loading Please Wait....."
+            />
+
+        <ListView
+            android:id="@+id/SiteList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp">
+        </ListView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

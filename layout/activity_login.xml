@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login_groof"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1.5">
+
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.635"
+                tools:layout_editor_absoluteX="16dp"
+                android:layout_weight="15"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <th.co.octagoninteractive.groof.util.CTextViewLi
+                        android:id="@+id/tv_sign_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="@string/tv_signin" />
+
+                    <th.co.octagoninteractive.groof.util.CTextViewLi
+                        android:id="@+id/tv_sign_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="18sp"
+                        android:textColor="#c9c9c9"
+                        android:autoLink="all"
+                        android:text="@string/hint_url"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/bg_tv"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/ic_login_id" />
+
+                        <th.co.octagoninteractive.groof.util.CEditText
+                            android:id="@+id/tv_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/edittext_username"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="20dp"
+                            android:inputType="textAutoComplete"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:background="@android:color/transparent"
+                            android:textColorHint="#c9c9c9" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="17dp"
+                    android:background="@drawable/bg_tv"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/ic_login_password" />
+
+                        <th.co.octagoninteractive.groof.util.CEditText
+                            android:id="@+id/tv_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="textPassword"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="20dp"
+                            android:hint="@string/edittext_password"
+                            android:textColor="@color/black"
+                            android:background="@android:color/transparent"
+                            android:textAlignment="center"
+                            android:textColorHint="#c9c9c9" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <th.co.octagoninteractive.groof.util.CButtonBold
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_btn_submit"
+                    android:text="@string/btn_login"
+                    android:textAlignment="center"
+                    android:textSize="26sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <th.co.octagoninteractive.groof.util.CTextView
+                            android:id="@+id/tv_forgot_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="17sp"
+                            android:layout_marginRight="19dp"
+                            android:text="@string/tv_forgot_your_password"
+                            android:textColor="@color/white" />
+
+                        <th.co.octagoninteractive.groof.util.CTextViewMed
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="|"
+                            android:layout_marginRight="21dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/white" />
+
+                        <th.co.octagoninteractive.groof.util.CTextView
+                            android:id="@+id/tv_demo_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textSize="17sp"
+                            android:text="@string/tv_demo_account"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

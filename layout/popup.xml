@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/tranparent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/action_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#242163"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <th.co.octagoninteractive.groof.util.CTextViewMed
+                    android:id="@+id/tv_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    tools:text="เข้าสู่ระบบ"/>
+
+                <ImageView
+                    android:id="@+id/btn_close"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_dialog_close" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            
+            <ImageView
+                android:id="@+id/ic_alert"
+                android:layout_width="88dp"
+                android:layout_height="78dp"
+                android:background="@drawable/ic_status_dialog_success"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"/>
+
+            <th.co.octagoninteractive.groof.util.CTextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textColor="#606060"
+                android:gravity="center_horizontal"
+                android:text="เข้าสู่ระบบไม่สำเร็จ \n กรุณาลองใหม่อีกครั้ง" />
+
+            <th.co.octagoninteractive.groof.util.CEditText
+                android:id="@+id/edt_expense"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:textColor="#606060"
+                android:paddingLeft="34dp"
+                android:visibility="gone"
+                android:digits="0123456789"
+                android:inputType="numberDecimal"
+                android:background="@drawable/bg_popup_edittext"
+                android:hint="@string/edittext_power"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp">
+
+                    <th.co.octagoninteractive.groof.util.CButtonBold
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_btn_cancel"
+                        android:textSize="26sp"
+                        android:layout_weight="1"
+                        android:text="@string/btn_cancel"/>
+
+                    <th.co.octagoninteractive.groof.util.CButtonBold
+                        android:id="@+id/btn_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/bg_btn_submit"
+                        android:layout_weight="1"
+                        android:textSize="26sp"
+                        android:text="@string/btn_ok"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp">
+
+                <th.co.octagoninteractive.groof.util.CButtonBold
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/bg_btn_submit"
+                    android:textSize="26sp"
+                    android:textColor="@color/white"
+                    android:text="@string/btn_ok"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

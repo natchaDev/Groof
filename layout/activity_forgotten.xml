@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_groof_new">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <th.co.octagoninteractive.groof.util.CTextViewMed
+            android:id="@+id/tv_title_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="#292663"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/title_menu_forgotten" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:background="@drawable/ic_change_password"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_tv">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_tv_change_password"/>
+
+            <th.co.octagoninteractive.groof.util.CEditTextCond
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:hint="@string/hint_email"
+                android:textAlignment="center"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:textSize="22sp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#c9c9c9"
+                />
+
+        </LinearLayout>
+
+
+        <th.co.octagoninteractive.groof.util.CButtonBold
+            android:id="@+id/btn_forgotten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_submit"
+            android:text="@string/btn_send_forgotten"
+            android:layout_marginTop="20dp"
+            android:textSize="26sp"/>
+
+        <th.co.octagoninteractive.groof.util.CTextView
+            android:id="@+id/tv_descriptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_forgotten"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
